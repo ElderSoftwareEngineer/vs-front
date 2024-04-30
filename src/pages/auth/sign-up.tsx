@@ -13,7 +13,6 @@ import { Helmet } from "react-helmet-async"
 import { Controller,useForm } from 'react-hook-form'
 import { z } from 'zod'
 import { toast } from "sonner"
-import { useNavigate } from "react-router-dom"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useMutation, useQuery } from "@tanstack/react-query"
 import { getDistricts } from "@/api/get-districts"
@@ -51,7 +50,6 @@ export function SignUp(){
         mutationFn: registerVoter
     })
 
-    // const navigate = useNavigate()
     async function handleSignUp(data: SignUpForm){
         try {
             await registerVoterFn({
