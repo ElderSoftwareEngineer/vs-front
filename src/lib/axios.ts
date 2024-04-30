@@ -1,6 +1,6 @@
-import { env } from '@/env'
+// import { env } from '@/env'
 import axios from 'axios'
 
 export const api = axios.create({
-    baseURL: env.VITE_API_URL
+    baseURL: 'https://yvq0ypx859.execute-api.us-east-1.amazonaws.com/dev/api'
 })
