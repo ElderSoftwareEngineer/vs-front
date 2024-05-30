@@ -24,7 +24,7 @@ export function SignIn(){
     const {
         register,
          handleSubmit,
-        formState: {isSubmitting, errors}
+        formState: {isSubmitting}
     } = useForm<SignInForm>(
         {
             resolver: zodResolver(signInForm)
