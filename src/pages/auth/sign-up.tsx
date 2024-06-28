@@ -57,7 +57,7 @@ export function SignUp(){
                 name: data.name,
                 sexo: data.sexo,
                 phone_number: data.phone_number,
-                date_of_birth: data.date_of_birth ?? "1900-01-01",
+                date_of_birth: data.date_of_birth == "" ? "1900-01-01" : data.date_of_birth,
                 district_id: Number(data.district_id),
                 voter_zone: data.voter_zone,
                 section_zone: data.section_zone
