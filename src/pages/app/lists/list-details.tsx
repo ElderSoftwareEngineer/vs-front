@@ -19,7 +19,6 @@ export function ListDetails({voterId, open} : ListDetailsProps) {
     return (
         <DialogContent>
             <DialogHeader>
-                {/* <DialogTitle>{voterId}</DialogTitle> */}
                 <DialogDescription>Detalhes</DialogDescription>
             </DialogHeader>
 
