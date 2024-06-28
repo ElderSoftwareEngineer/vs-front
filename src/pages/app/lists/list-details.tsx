@@ -19,7 +19,7 @@ export function ListDetails({voterId, open} : ListDetailsProps) {
     return (
         <DialogContent>
             <DialogHeader>
-                <DialogTitle>{voterId}</DialogTitle>
+                {/* <DialogTitle>{voterId}</DialogTitle> */}
                 <DialogDescription>Detalhes</DialogDescription>
             </DialogHeader>
 
@@ -65,7 +65,7 @@ export function ListDetails({voterId, open} : ListDetailsProps) {
                             Data Nascimento
                         </TableCell>
                         <TableCell className="flex justify-end">
-                            {voter.date_of_birth}
+                            {voter.date_of_birth == "01/01/1900" ? "" : voter.date_of_birth}
                         </TableCell>
                     </TableRow>
 
