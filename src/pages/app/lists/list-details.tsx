@@ -1,5 +1,5 @@
 import { getVoterDetails } from "@/api/get-voter-details";
-import { DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import { DialogContent, DialogHeader} from "@/components/ui/dialog";
 import { Table, TableBody, TableCell, TableRow } from "@/components/ui/table";
 import { DialogDescription } from "@radix-ui/react-dialog";
 import { useQuery } from "@tanstack/react-query";
