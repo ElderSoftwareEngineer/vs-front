@@ -69,7 +69,7 @@ export function ListTableRow({voter}: ListTableRowProps){
             <TableCell className="font-nono text-xs font-medium">{voter.name}</TableCell>
             <TableCell className="font-nono text-xs font-medium">{voter.sexo}</TableCell>
             <TableCell className="font-nono text-xs font-medium">{voter.phone_number}</TableCell>
-            <TableCell className="font-nono text-xs font-medium">{voter.date_of_birth}</TableCell>
+            <TableCell className="font-nono text-xs font-medium">{voter.date_of_birth == "01/01/1900" ? "" : voter.date_of_birth}</TableCell>
             <TableCell className="font-nono text-xs font-medium">{voter.district_name}</TableCell>
             <TableCell className="font-nono text-xs font-medium">{voter.voter_zone ?? ''}</TableCell>
             <TableCell className="font-nono text-xs font-medium">{voter.section_zone ?? ''}</TableCell>
