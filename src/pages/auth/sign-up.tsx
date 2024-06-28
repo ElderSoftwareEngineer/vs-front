@@ -22,7 +22,8 @@ const signUpForm = z.object({
     name: z.string({required_error: "O nome é obrigatório"}).min(1, {message: "O nome é obrigatório"}),
     sexo: z.string({required_error: "O sexo é obrigatório"}).min(1, {message: "O sexo é obrigatório"}),
     phone_number: z.string(),
-    date_of_birth: z.string({required_error:"A data de aniversário é obrigatório"}).min(1,{message: "A data de aniversário é obrigatório"}),
+    // date_of_birth: z.string({required_error:"A data de aniversário é obrigatório"}).min(1,{message: "A data de aniversário é obrigatório"}),
+    date_of_birth: z.string(),
     district_id: z.string({required_error: "O bairro é obrigatório."}).min(1, {message: "O bairro é obrigatório."}),
     voter_zone: z.string(),
     section_zone: z.string(),
@@ -133,7 +134,7 @@ export function SignUp(){
                         <div className="space-y-1">
                             <Label htmlFor="date_of_birth">Data de Nascimento</Label>
                             <Input id="date_of_birth" type="date"  {...register('date_of_birth')}></Input>
-                            {errors.date_of_birth && <p className="text-red-500 text-sm">{errors.date_of_birth.message}</p>}
+                            {/* {errors.date_of_birth && <p className="text-red-500 text-sm">{errors.date_of_birth.message}</p>} */}
                         </div>
                         <div className="space-y-1">
                         <Label htmlFor="district">Bairro</Label>
