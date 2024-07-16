@@ -1,5 +1,4 @@
 import { Helmet } from "react-helmet-async";
-import { MonthRevenueCard } from "./month-revenue-card";
 import { TotalMetaCard } from "./total-meta-card";
 import { TotalSexoMCard } from "./total-sexo-m-card";
 import { TotalSexoFCard } from "./total-sexo-f-card";
