@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import { MonthRevenueCard } from "./month-revenue-card";
+import { TotalMetaCard } from "./total-meta-card";
 import { TotalSexoMCard } from "./total-sexo-m-card";
 import { TotalSexoFCard } from "./total-sexo-f-card";
 import { TotalMelhorBairro } from "./total-melhor-bairro-card";
@@ -15,7 +16,8 @@ export function Dashboard() {
             <h1 className="text-3xl font-bold tracking-tight">Dashboard</h1>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-            <MonthRevenueCard/>
+            <TotalMetaCard/>
+            {/* <MonthRevenueCard/> */}
             <TotalSexoMCard/>
             <TotalSexoFCard/>
             <TotalMelhorBairro/>

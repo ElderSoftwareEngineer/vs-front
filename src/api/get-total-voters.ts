@@ -11,6 +11,5 @@ export async function getTotalVoters(){
                 Authorization: `Bearer ${Cookies.get('auth')}`
             },
         });
-  console.log(response.data);
   return response.data;
 }
